@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <meta name="description" content="Get in touch with us through our contact form. We’re here to answer any questions you may have about our services and apps.">
     <style>
         /* Basic Reset */
         * {
@@ -72,10 +73,23 @@
             border-radius: 6px;
             font-size: 1.1rem;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, transform 0.2s;
         }
         button:hover {
             background-color: #e85850;
+            transform: scale(1.05);
+        }
+
+        /* Visually Hidden Class */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
         }
 
         /* Links Styling */
@@ -90,6 +104,7 @@
         }
         .link:hover {
             color: #005bb5;
+            text-decoration: underline;
         }
 
         /* Privacy Policy Styling */
@@ -105,6 +120,7 @@
         }
         .privacy-policy a:hover {
             color: #005bb5;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -112,22 +128,28 @@
 
 <div class="contact-container">
     <h1>Contact Us</h1>
-    <p>We'd love to hear from you. Fill out the form below or get in touch via email.</p>
+    <p>We'd love to hear from you. Please fill out the form below to get in touch with us.</p>
     
     <!-- Contact Form -->
     <form action="mailto:insolito.egresar.0a@icloud.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <label for="name" class="visually-hidden">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your Name">
+        
+        <label for="email" class="visually-hidden">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+        
+        <label for="message" class="visually-hidden">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
+        
+        <button type="submit" aria-label="Send Message">Send Message</button>
     </form>
 
     <!-- App Store Link -->
-    <a href="https://apple.co/3CefoEB" class="link">Explore Our Apps on the App Store</a>
+    <a href="https://apple.co/3CefoEB" class="link" aria-label="Explore Our Apps on the App Store">Explore Our Apps on the App Store</a>
 
     <!-- Privacy Policy Section -->
     <div class="privacy-policy">
-        <p>By using this contact form, you agree to our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</p>
+        <p>By using this contact form, you agree to our <a href="privacy-policy.html" target="_blank" aria-label="Privacy Policy">Privacy Policy</a>.</p>
     </div>
 </div>
 
