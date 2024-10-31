@@ -1,3 +1,4 @@
+// Send Mail Function
 function sendMail(event) {
     event.preventDefault();
 
@@ -28,6 +29,7 @@ function sendMail(event) {
     document.getElementById("privacy-link").style.display = "none";
 }
 
+// Reset Form Function
 function resetForm() {
     // Reset form fields
     document.getElementById("contact-form").reset();
@@ -40,4 +42,3 @@ function resetForm() {
     // Hide the Thank You message
     document.getElementById("thank-you").style.display = "none";
 }
-
