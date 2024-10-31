@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Consent Manager Script for Privacy Compliance -->
+    <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/92d534ae81e42.js" data-cmp-host="b.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
+    
+    <!-- Google Analytics -->
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-5J7Z1PZZ53"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-5J7Z1PZZ53');
+    </script>
+
+    <!-- Meta Tags for SEO and Mobile Optimization -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos</title>
+    <meta name="description" content="Póngase en contacto con nosotros a través de nuestro formulario. Estamos aquí para responder a cualquier pregunta sobre nuestros servicios y aplicaciones.">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="contact.css">
+    
+    <!-- Link to External JavaScript -->
+    <script src="contact.js" defer></script>
+</head>
+<body>
+    <div class="contact-container">
+        <!-- Page Heading -->
+        <div id="page-heading">
+            <h1>Contáctenos</h1>
+            <p>Nos encantaría saber de usted. Por favor, complete el formulario a continuación para ponerse en contacto con nosotros.</p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form" onsubmit="sendMail(event)">
+            <!-- Name Input -->
+            <label for="name" class="visually-hidden">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre" required aria-label="Nombre">
+
+            <!-- Subject Input -->
+            <label for="subject" class="visually-hidden">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto" required aria-label="Asunto">
+
+            <!-- Message Input -->
+            <label for="message" class="visually-hidden">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Mensaje" required aria-label="Mensaje"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" aria-label="Enviar Mensaje">Enviar Mensaje</button>
+        </form>
+
+        <!-- Thank You Message -->
+        <div id="thank-you" style="display: none; text-align: center;">
+            <h2>¡Casi Listo!</h2>
+            <p>Su cliente de correo se ha abierto con su mensaje. Por favor, revíselo y envíelo manualmente para completar el envío.</p>
+            <a href="#" onclick="resetForm();">Enviar Otro Mensaje</a>
+        </div>
+
+        <!-- Privacy Policy Link -->
+        <div id="privacy-link" class="privacy-policy">
+            <p>Al utilizar este formulario de contacto, usted acepta nuestra <a href="privacy-policy-es.html" target="_blank" aria-label="Política de Privacidad">Política de Privacidad</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
