@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Redirect based on language preference
     if (userLang.startsWith('es')) {
-        window.location.href = "html/es/contact-es.html";
+        window.location.href = "html/es/contact.html";
     } else {
         window.location.href = "html/en/contact.html";
     }
