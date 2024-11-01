@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Consent Manager Script for Privacy Compliance -->
     <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/92d534ae81e42.js" data-cmp-host="b.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script>
@@ -16,26 +16,26 @@
     <!-- Meta Tags for SEO and Mobile Optimization -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <meta name="description" content="Get in touch with us through our contact form. We’re here to answer any questions you may have about our services and apps.">
+    <title>Contáctenos</title>
+    <meta name="description" content="Póngase en contacto con nosotros a través de nuestro formulario. Estamos aquí para responder a cualquier pregunta sobre nuestros servicios y aplicaciones.">
     
     <!-- Link to External CSS -->
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../../css/contact.css">
     
     <!-- Link to External JavaScript -->
-    <script src="contact.js" defer></script>
+    <script src="../../js/contact.js" defer></script>
 </head>
 <body>
     <!-- Language Dropdown Menu -->
     <div class="language-menu">
         <button class="language-btn">
-            🌐 Language <span>&#9662;</span> <!-- Down arrow icon -->
+            🌐 Idioma <span>&#9662;</span> <!-- Down arrow icon -->
         </button>
         <div class="language-dropdown">
-            <a href="contact.html">
-                🇺🇸 English
+            <a href="../en/contact.html">
+                🇺🇸 Inglés
             </a>
-            <a href="contact-es.html">
+            <a href="../es/contact-es.html">
                 🇪🇸 Español
             </a>
         </div>
@@ -44,38 +44,38 @@
     <div class="contact-container">
         <!-- Page Heading -->
         <div id="page-heading">
-            <h1>Contact Us</h1>
-            <p>We'd love to hear from you. Please fill out the form below to get in touch with us.</p>
+            <h1>Contáctenos</h1>
+            <p>Nos encantaría saber de usted. Por favor, complete el formulario a continuación para ponerse en contacto con nosotros.</p>
         </div>
 
         <!-- Contact Form -->
         <form id="contact-form" onsubmit="sendMail(event)">
             <!-- Name Input -->
-            <label for="name" class="visually-hidden">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required aria-label="Name">
+            <label for="name" class="visually-hidden">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Nombre" required aria-label="Nombre">
 
             <!-- Subject Input -->
-            <label for="subject" class="visually-hidden">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required aria-label="Subject">
+            <label for="subject" class="visually-hidden">Asunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto" required aria-label="Asunto">
 
             <!-- Message Input -->
-            <label for="message" class="visually-hidden">Message</label>
-            <textarea id="message" name="message" placeholder="Message" required aria-label="Message"></textarea>
+            <label for="message" class="visually-hidden">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Mensaje" required aria-label="Mensaje"></textarea>
 
             <!-- Submit Button -->
-            <button type="submit" aria-label="Send Message">Send Message</button>
+            <button type="submit" aria-label="Enviar Mensaje">Enviar Mensaje</button>
         </form>
 
         <!-- Thank You Message -->
         <div id="thank-you" style="display: none; text-align: center;">
-            <h2>Almost Done!</h2>
-            <p>Your email client has opened with your message. Please review and send it manually to complete your submission.</p>
-            <a href="#" onclick="resetForm();">Send Another Message</a>
+            <h2>¡Casi Listo!</h2>
+            <p>Su cliente de correo se ha abierto con su mensaje. Por favor, revíselo y envíelo manualmente para completar el envío.</p>
+            <a href="#" onclick="resetForm();">Enviar Otro Mensaje</a>
         </div>
 
         <!-- Privacy Policy Link -->
         <div id="privacy-link" class="privacy-policy">
-            <p>By using this contact form, you agree to our <a href="privacy-policy.html" target="_blank" aria-label="Privacy Policy">Privacy Policy</a>.</p>
+            <p>Al utilizar este formulario de contacto, usted acepta nuestra <a href="privacy-policy-es.html" target="_blank" aria-label="Política de Privacidad">Política de Privacidad</a>.</p>
         </div>
     </div>
 </body>
